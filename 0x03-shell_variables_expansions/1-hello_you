@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello HP"
+echo "hello $(whoami)"
