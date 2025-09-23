@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "HBTN=89"
+echo "$HBTN"
