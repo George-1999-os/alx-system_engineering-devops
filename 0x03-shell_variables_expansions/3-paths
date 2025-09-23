@@ -1,2 +1,13 @@
 #!/bin/bash
-echo $PATH | tr ':' '\n' | wc -l
+# 3-paths: count the number of directories in $PATH
+
+count=0
+IFS=':' read -r -a dirs <<< "$PATH"
+
+for dir in "${dirs[@]}"; do
+    if [ -n "$dir" ]; then
+        ((count++))
+    fi
+done
+
+echo "$count"
