@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 103-helper.py "$WATER" "$STIR"
