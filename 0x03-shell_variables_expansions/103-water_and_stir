@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 103-helper.py "$WATER" "$STIR"
+echo $WATER $STIR | ./103-helper.py
