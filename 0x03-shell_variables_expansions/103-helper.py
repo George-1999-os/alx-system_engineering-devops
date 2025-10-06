@@ -22,13 +22,13 @@ def to_base(n, alphabet):
     return ''.join(reversed(digits))
 
 if __name__ == "__main__":
-    # read WATER and STIR from stdin (space-separated)
+    # read WATER and STIR from stdin
     data = sys.stdin.read().strip().split()
     water_s, stir_s = data if len(data) == 2 else ("", "")
 
-    alph_water = list("water")
-    alph_stir = list("stir")
-    alph_best = list("bestchol")
+    alph_water = "water"
+    alph_stir = "stir."
+    alph_best = "bestchol"
 
     n1 = to_int(water_s, alph_water)
     n2 = to_int(stir_s, alph_stir)
